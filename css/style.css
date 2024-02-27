@@ -51,16 +51,20 @@ svg {
   height: 100vh;
   width: 100%;
   background-color: #00000063;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   display: none;
   transition: display ease 0.3s;
 }
 .formSec .container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 40px 30px;
-  width: 45%;
+  max-width: 500px;
   border-radius: 10px;
   background: #fff;
 }
@@ -111,3 +115,56 @@ svg {
   display: none;
 }
 /* Form section End */
+
+/* Class Room Card  Start*/
+.mainCardsSec {
+  margin-top: 50px;
+  padding: 2% 5%;
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.main {
+  background-color: #fff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  min-width: 300px;
+  border-radius: 10px;
+}
+.cardBox {
+  min-height: 280px;
+}
+.bgSec {
+  width: 100%;
+  height: 110px;
+  border-radius: 10px 10px 0px 0px;
+  background-image: url("../img/img_breakfast.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 25px 20px;
+}
+.cardText {
+  color: #fff;
+}
+.dotIconSec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.dotIconSec svg {
+  fill: #fff;
+}
+.cardBottom {
+  display: flex;
+  gap: 25px;
+  padding: 15px 10px ;
+  justify-content: end;
+  border-top: 1px solid rgb(218, 220, 224);
+}
+.cardBottom svg{
+  fill: #000;
+}
+/* Class Room Card  End*/
